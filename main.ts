@@ -14,9 +14,6 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     vx = 0
     vy = 1
 })
-info.onLifeZero(function () {
-    music.playMelody("A F E F D G E F ", 120)
-})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     if (atefoodflag == 0) {
         snakebody.unshift(sprites.create(img`
